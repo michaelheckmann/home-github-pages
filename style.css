@@ -1,62 +1,64 @@
 :root {
---cultured: #f7f9f9ff;
---opal: #bed8d4ff;
---opal-dark: rgb(165, 190, 187);
---medium-turquoise: #78d5d7ff;
---baby-blue: #63d2ffff;
---green-blue-crayola: #2081c3ff;
+/* CSS HEX */
+--black-coral: #495867ff;
+--blue-yonder: #577399ff;
+--beau-blue: #bdd5eaff;
+--ghost-white: #f7f7ffff;
+--orange-red-crayola: #fe5f55ff;
 --black: #212121;
 }
 
-body {
+html * {
     font-family: 'Nunito Sans', sans-serif;
-    margin: 0px;
+    margin: 0;
     padding: 0;
+}
+
+body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    background-color: var(--cultured);
+    background-color: var(--ghost-white);
     color: var(--black);
 }
 
 .wrapper {
-    width: 70%;
-    margin: 0 auto;
+    width: 60vw;
+    padding: 0px 20px;
 }
 
 h1,h2 {
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
     font-size: 50px;
     margin-top: 100px;
+    color: var(--blue-yonder);
 }
 
 h2 {
     font-size: 30px;
+    margin-top: 30px;
 }
 
 ul {
     list-style: none;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
 }
 
 li {
-    padding: 30px;
+    margin-bottom: 30px;
 }
 
 a {
     text-decoration: none;
-    color: var(--green-blue-crayola);
-    padding: 20px;
-    background-color: var(--opal);
-    border-radius: 20px;
-    transition: background-color 0.2s ease;
+    color: var(--black-coral);
+    transition: color 0.2s ease;
 }
 
 a span {
@@ -64,5 +66,5 @@ a span {
 }
 
 a:hover {
-    background-color: var(--opal-dark);
+    color: var(--blue-yonder-darken);
 }
